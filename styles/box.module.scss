@@ -83,13 +83,14 @@ $size: 270px;
 .left,
 .back,
 .right {
-	background-color: #E4A493;
-	border: 1px solid rgba(0, 0, 0, .2);
+	background-color: #000000;
+	border: 2px solid #FF69B4;
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
 }
 
 .bottom {
@@ -115,8 +116,8 @@ $size: 270px;
 .lid-back,
 .lid-right {
 	&:after {
-		background-color: #B76159;
-		box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+		background-color: #FF69B4;
+		box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
 		content: '';
 		height: 100%;
 		left: calc(50% - 10px);
@@ -128,8 +129,8 @@ $size: 270px;
 
 .lid-top {
 	&:before {
-		background-color: #E4A493;
-		box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+		background-color: #000000;
+		box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
 		content: '';
 		height: 20px;
 		left: 0;
@@ -199,13 +200,14 @@ $size: 270px;
 .lid-back,
 .lid-right,
 .lid-front {
-	background-color: #E4A493;
-	border: 1px solid rgba(0, 0, 0, .2);
+	background-color: #000000;
+	border: 2px solid #FF69B4;
 	left: -5px;
 	opacity: 1;
 	position: absolute;
 	top: 0;
 	width: $size + 10px;
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
 }
 
 .lid-top {
@@ -283,44 +285,45 @@ $size: 270px;
 	height: 144px;
 	position: absolute;
 	// line-height: 2;
-	background-color: #FAD7A0;
+	background-color: #FFD700;
 	border-radius: 10px;
 	// position: relative;
 	margin: 50px auto;
 	transform: translateY(-6px);
+	box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
 }
 
 .cake:before {
 	content: "";
-	background-color: #935116;
+	background-color: #8B4513;
 	width: 250px;
 	height: 15px;
 	position: absolute;
 	top: 75px;
-	box-shadow: 0 30px #935116;
+	box-shadow: 0 30px #8B4513;
 }
 
 .cake:after {
 	content: "";
 	position: absolute;
-	background-color: #573612;
+	background-color: #FF8C00;
 	width: 250px;
 	height: 40px;
 	top: 0;
 	border-radius: 10px 10px 0 0;
-	box-shadow: inset 0 10px rgba(0, 0, 0, 0.07);
+	box-shadow: inset 0 10px rgba(255, 140, 0, 0.3);
 }
 
 .chocolate {
 	position: absolute;
-	background-color: #573612;
+	background-color: #8B4513;
 	width: 25px;
 	height: 35px;
 	top: 27px;
 	left: 0;
 	z-index: 2;
 	border-radius: 50px;
-	box-shadow: 25px 2px #FAD7A0, 50px -10px #573612, 75px -5px #FAD7A0, 100px 3px #573612, 125px 0 #FAD7A0, 150px -5px #573612, 175px 3px #FAD7A0, 200px -5px #573612, 225px -10px #FAD7A0;
+	box-shadow: 25px 2px #FFD700, 50px -10px #8B4513, 75px -5px #FFD700, 100px 3px #8B4513, 125px 0 #FFD700, 150px -5px #8B4513, 175px 3px #FFD700, 200px -5px #8B4513, 225px -10px #FFD700;
 }
 
 /* Styling for candles */
@@ -682,9 +685,9 @@ Copy code .candle-two {
 
 .mbtn {
 	// make a wish button style
-	background-color: #0f9ef1;
-	border: none;
-	color: white;
+	background-color: #000000;
+	border: 3px solid #FF69B4;
+	color: #FF69B4;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -696,14 +699,21 @@ Copy code .candle-two {
 	position: absolute;
 	left: 45%;
 	bottom: 10px;
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+	transition: all 0.3s ease;
+}
 
+.mbtn:hover {
+	background-color: #FF69B4;
+	color: #000000;
+	box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
 }
 
 .lightbtn {
 	// make a wish button style
-	background-color: #0f9ef1;
-	border: none;
-	color: white;
+	background-color: #000000;
+	border: 3px solid #FF69B4;
+	color: #FF69B4;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -715,7 +725,14 @@ Copy code .candle-two {
 	position: absolute;
 	left: 45%;
 	bottom: 10px;
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+	transition: all 0.3s ease;
+}
 
+.lightbtn:hover {
+	background-color: #FF69B4;
+	color: #000000;
+	box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
 }
 
 .lightbtnc {
@@ -783,15 +800,16 @@ Copy code .candle-two {
 	display: inline-block;
 	width: 100px;
 	height: 125px;
-	background: hsl(215, 50%, 65%);
+	background: #000000;
 	border-radius: 80%;
 	position: relative;
-	box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+	box-shadow: inset -10px -10px 0 rgba(255, 105, 180, 0.3);
 	margin: 20px 30px;
 	transition: transform 0.5s ease;
 	z-index: 10;
 	animation: balloons 4s ease-in-out infinite;
 	transform-origin: bottom center;
+	border: 3px solid #FF69B4;
 }
 
 .baloon-container {
@@ -873,39 +891,53 @@ Copy code .candle-two {
 }
 
 .balloon:nth-child(2) {
-	background: hsl(245, 40%, 65%);
+	background: #FF69B4;
 	animation-duration: 3.5s;
+	border-color: #FF1493;
 }
 
 .balloon:nth-child(2):before {
-	color: hsl(245, 40%, 65%);
+	color: #FF69B4;
 }
 
 .balloon:nth-child(3) {
-	background: hsl(139, 50%, 60%);
+	background: #FFD700;
 	animation-duration: 3s;
+	border-color: #FFA500;
 }
 
 .balloon:nth-child(3):before {
-	color: hsl(139, 30%, 50%);
+	color: #FFD700;
 }
 
 .balloon:nth-child(4) {
-	background: hsl(59, 50%, 58%);
+	background: #FF69B4;
 	animation-duration: 4.5s;
+	border-color: #FF1493;
 }
 
 .balloon:nth-child(4):before {
-	color: hsl(59, 30%, 52%);
+	color: #FF69B4;
 }
 
 .balloon:nth-child(5) {
-	background: hsl(23, 55%, 57%);
+	background: #FFD700;
 	animation-duration: 5s;
+	border-color: #FFA500;
 }
 
 .balloon:nth-child(5):before {
-	color: hsl(23, 44%, 46%);
+	color: #FFD700;
+}
+
+.balloon:nth-child(6) {
+	background: #FF69B4;
+	animation-duration: 4.2s;
+	border-color: #FF1493;
+}
+
+.balloon:nth-child(6):before {
+	color: #FF69B4;
 }
 
 .fromtag {
@@ -915,14 +947,16 @@ Copy code .candle-two {
 }
 
 .letter {
-	background: #fafafa;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 300px 25px rgba(222, 198, 122, 0.7) inset;
+	background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 300px 25px rgba(255, 215, 0, 0.7) inset;
 	width: 350px;
 	height: 600px;
 	margin: 1.5% 50% auto;
 	left: -225px;
 	padding: 24px;
 	position: relative;
+	border: 3px solid #000000;
+	border-radius: 15px;
 }
 
 .message {
@@ -971,8 +1005,8 @@ Copy code .candle-two {
 .letter:before,
 .letter:after {
 	content: "";
-	background: #fafafa;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), inset 0 0 300px rgba(222, 198, 122, 0.7);
+	background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+	box-shadow: 0 0 15px rgba(255, 105, 180, 0.6), inset 0 0 300px rgba(255, 215, 0, 0.7);
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -1009,8 +1043,105 @@ Copy code .candle-two {
 
 .letter:hover:after {
 	transform: rotate(0deg);
-	border: solid rgba(111, 99, 61, 0.4);
+	border: solid rgba(255, 105, 180, 0.6);
 	border-width: 0px 0px 0px 1px;
 	right: 3px;
 	top: -3px;
+}
+
+/* Sunflower styles */
+.sunflower {
+	position: absolute;
+	top: -60px;
+	right: 20px;
+	width: 80px;
+	height: 80px;
+	z-index: 5;
+	animation: sunflowerFloat 3s ease-in-out infinite;
+}
+
+.sunflowerSvg {
+	filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+	animation: sunflowerRotate 20s linear infinite;
+}
+
+.sunflowerSvg .petals {
+	animation: petalWave 4s ease-in-out infinite;
+}
+
+@keyframes sunflowerFloat {
+
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes sunflowerRotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes petalWave {
+
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+/* Kuromi-style bow styles */
+.kuromiBow {
+	position: absolute;
+	top: -40px;
+	left: 20px;
+	width: 60px;
+	height: 40px;
+	z-index: 5;
+}
+
+.bowLeft,
+.bowRight {
+	position: absolute;
+	width: 25px;
+	height: 35px;
+	background: #000000;
+	border: 2px solid #FF69B4;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+}
+
+.bowLeft {
+	left: 0;
+	transform: rotate(-15deg);
+}
+
+.bowRight {
+	right: 0;
+	transform: rotate(15deg);
+}
+
+.bowCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 12px;
+	height: 12px;
+	background: #FF69B4;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
 }
