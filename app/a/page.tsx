@@ -149,7 +149,7 @@ function Home2() {
 
             // ctx.fillStyle = ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
             // ctx.fillStyle = ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
-            ctx.fillStyle = 'rgba(255, 10, 10, 0.5)';
+            ctx.fillStyle = 'rgba(255, 215, 0, 0.8)';
             snowflakes.forEach(flake => {
                 flake.update(elapsed, canvas.width, canvas.height);
                 flake.render(ctx);
@@ -190,6 +190,37 @@ function Home2() {
 
                             <div className={styles["bottom-line"]}></div>
                         </div>
+
+                        {/* Sunflower decoration */}
+                        <div className={styles.sunflower}>
+                            {/* SVG Sunflower */}
+                            <svg width="80" height="80" viewBox="0 0 80 80" className={styles.sunflowerSvg}>
+                                {/* Sunflower petals */}
+                                <g className={styles.petals}>
+                                    <path d="M40 0 Q45 15 50 20 Q55 25 60 30 Q65 35 70 40 Q65 45 60 50 Q55 55 50 60 Q45 65 40 70 Q35 65 30 60 Q25 55 20 50 Q15 45 10 40 Q15 35 20 30 Q25 25 30 20 Q35 15 40 0" fill="#FFD700" stroke="#FFA500" strokeWidth="1" />
+                                    <path d="M40 5 Q42 18 48 22 Q52 26 58 32 Q62 36 68 40 Q62 44 58 48 Q52 52 48 56 Q42 60 40 73 Q38 60 32 56 Q28 52 22 48 Q18 44 12 40 Q18 36 22 32 Q28 28 32 24 Q38 20 40 5" fill="#FFA500" stroke="#FF8C00" strokeWidth="1" />
+                                    <path d="M40 10 Q44 20 46 25 Q48 30 52 35 Q56 40 60 40 Q56 40 52 45 Q48 50 46 55 Q44 60 40 70 Q36 60 34 55 Q32 50 28 45 Q24 40 20 40 Q24 40 28 35 Q32 30 34 25 Q36 20 40 10" fill="#FFD700" stroke="#FFA500" strokeWidth="1" />
+                                </g>
+                                {/* Sunflower center */}
+                                <circle cx="40" cy="40" r="15" fill="#8B4513" stroke="#654321" strokeWidth="2" />
+                                <circle cx="40" cy="40" r="12" fill="#A0522D" />
+                                <circle cx="40" cy="40" r="9" fill="#8B4513" />
+                                <circle cx="40" cy="40" r="6" fill="#654321" />
+                                <circle cx="40" cy="40" r="3" fill="#8B4513" />
+                            </svg>
+
+                            {/* Alternative: Realistic Sunflower Image */}
+                            {/* Uncomment the line below and comment out the SVG above if you want to use a real sunflower image */}
+                            {/* <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=80&h=80&fit=crop&crop=center" alt="Sunflower" className={styles.sunflowerImage" /> */}
+                        </div>
+
+                        {/* Kuromi-style bow decoration */}
+                        <div className={styles.kuromiBow}>
+                            <div className={styles.bowLeft}></div>
+                            <div className={styles.bowRight}></div>
+                            <div className={styles.bowCenter}></div>
+                        </div>
+
                         {/* </div> */}
                         {/* <b>Gift:</b> Personalized Bathrobes <br />
                     <b>To:</b> Sora Miriam <br />
@@ -220,16 +251,22 @@ function Home2() {
                     <div className={styles.balloon}>
                     </div>
                     <div className={styles.balloon}>
-                        <div className={styles.textball}>A</div>
+                        <div className={styles.textball}>V</div>
                     </div>
                     <div className={styles.balloon}>
-                        <div className={styles.textball}>M</div>
+                        <div className={styles.textball}>I</div>
+                    </div>
+                    <div className={styles.balloon}>
+                        <div className={styles.textball}>R</div>
                     </div>
                     <div className={styles.balloon}>
                         <div className={styles.textball}>E</div>
                     </div>
                     <div className={styles.balloon}>
-                        <div className={styles.textball}>L</div>
+                        <div className={styles.textball}>N</div>
+                    </div>
+                    <div className={styles.balloon}>
+                        <div className={styles.textball}>N</div>
                     </div>
                     <div className={styles.balloon}>
                     </div>
@@ -252,14 +289,14 @@ function Home2() {
                 <div className={messageDialogOpened ? styles.message : styles.messaged}>
 
                     <div className={styles.letter}>
-                        <p>Today is as beautiful as other days</p>
-                        <p>but you realize another year has gone</p>
+                        <p>🌻 Today is as beautiful as a sunflower field 🌻</p>
+                        <p>Another year has blossomed like the petals of spring</p>
                         <p>in a blink of the eyes</p>
-                        <p>Do you know? today is just special,so special to you </p>
-                        <p>May this lovely day bring happiness and all your wishes,hopes be granted soon, also all the trauma you have disappear.</p>
-                        <p>I'm here to support you with whatever you need. So just tell me when you need something</p>
-                        <p>I'm also happy and grateful to have known and been able to be close to you.</p>
-                        <p>Happy birthday Yulia Amelia, wish you all the best</p>
+                        <p>Do you know? Today is just special, so special to you ✨</p>
+                        <p>May this lovely day bring happiness and all your wishes, hopes be granted soon, also all the trauma you have disappear.</p>
+                        <p>You're one of the best friends I could ask for, and I'm always here for you! 💖</p>
+                        <p>Thanks for being such an amazing person and making my life brighter with your friendship.</p>
+                        <p>Happy birthday virenn! 🌻✨ Wish you all the best</p>
                         <h3 className={styles.fromtag}>from</h3>
                         <h3 className={styles.fromtag}>[Saka]</h3>
 

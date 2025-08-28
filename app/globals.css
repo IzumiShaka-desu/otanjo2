@@ -18,12 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #68b0ab;
-  /* linear-gradient(to bottom,
-      #68b0ab,
-      /* rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb) */
-  /* ); */
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FF69B4 50%, #FF1493 75%, #000000 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @layer utilities {
